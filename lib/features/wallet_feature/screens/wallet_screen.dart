@@ -18,10 +18,12 @@ class WalletScreen extends StatelessWidget {
           if (wallet != null) {
             return WalletList(wallet: wallet);
           } else {
-            return const Center(child: Text('failed to fetch wallet'));
+            return const Center(
+                child: Text('failed to fetch history no enough data ! '));
           }
         case WalletStatus.error:
-          return const Center(child: Text('failed to fetch wallet info'));
+          return const Center(
+              child: Text('failed to fetch history no enough data ! '));
       }
     });
   }

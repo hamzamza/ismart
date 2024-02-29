@@ -122,10 +122,10 @@ class _DurationSelectionScreenState extends State<DurationSelectionScreen> {
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
                   color: Colors.green[400]),
-              child: Center(
+              child: const Center(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: const [
+                  children: [
                     Icon(Icons.electric_bolt, size: 50, color: Colors.white),
                     Text("Start",
                         style: TextStyle(

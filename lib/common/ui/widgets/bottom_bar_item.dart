@@ -1,5 +1,3 @@
-import 'dart:io' show Platform;
-
 import 'package:flutter/material.dart';
 
 class BottomBarItem extends StatelessWidget {
@@ -29,7 +27,11 @@ class BottomBarItem extends StatelessWidget {
           ),
           Text(
             label,
-            style: const TextStyle(fontSize: 10),
+            style: TextStyle(
+              fontSize: 12,
+              fontWeight: FontWeight.w400,
+              color: isSelected ? Colors.black : Colors.grey,
+            ),
           )
         ],
       ),

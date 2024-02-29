@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '/common/ui/widgets/bottom_bar_item.dart';
-import '/features/wallet_feature/bloc/bloc.dart';
 import '../screens/home_screen/home_bloc.dart';
 import '../screens/home_screen/home_event.dart';
 import '../screens/home_screen/home_state.dart';
@@ -33,7 +32,7 @@ class ApplicationBottomBar extends StatelessWidget {
                   },
                 ),
                 BottomBarItem(
-                  icon: Icons.swipe_up_outlined,
+                  icon: Icons.charging_station,
                   label: 'Pass',
                   isSelected:
                       homeBloc.state.currentScreen == AppScreen.reservations,
@@ -43,8 +42,8 @@ class ApplicationBottomBar extends StatelessWidget {
                 ),
                 const SizedBox(width: 45),
                 BottomBarItem(
-                  icon: Icons.wallet,
-                  label: 'Contribuer',
+                  icon: Icons.history,
+                  label: 'Historique',
                   isSelected: homeBloc.state.currentScreen == AppScreen.wallet,
                   onPressed: () {
                     homeBloc.add(SwitchTabEvent(AppScreen.wallet));

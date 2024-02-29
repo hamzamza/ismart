@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:ismart/common/router/routes.dart';
 import 'package:ismart/features/account/bloc/bloc.dart';
 import 'package:ismart/features/account/repository/signIn_credentials.dart';
 
@@ -197,7 +198,10 @@ class _MyWidgetState extends State<LoginScreen> {
                                 height: 30,
                               ),
                               GestureDetector(
-                                onTap: (() {}),
+                                onTap: (() {
+                                  Navigator.pushNamed(
+                                      context, signUpScreenRoute);
+                                }),
                                 child: Container(
                                   height: 40,
                                   width: 200,

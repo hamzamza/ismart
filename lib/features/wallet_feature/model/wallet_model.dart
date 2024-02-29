@@ -1,4 +1,3 @@
-import 'package:equatable/equatable.dart';
 import '/features/wallet_feature/model/transaction_item.dart';
 
 class Wallet {

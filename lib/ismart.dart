@@ -26,7 +26,7 @@ class Ismart extends StatelessWidget {
         ],
         child: MaterialApp(
           title: 'ismart mobile app',
-          initialRoute: isLogedIn ? homeScreenPath : logInScreenRoute,
+          initialRoute: isLogedIn ? homeScreenPath : signInScreenRoute,
           routes: routes,
         ));
   }

@@ -4,7 +4,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '/features/stations_feature/widgets/map_utility_buttons.dart';
 import '/features/stations_feature/widgets/stations_map.dart';
 import '../bloc/bloc.dart';
-import '../models/station_model.dart';
 
 class StationsScreen extends StatelessWidget {
   const StationsScreen({Key? key}) : super(key: key);

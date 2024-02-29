@@ -25,10 +25,12 @@ class AccountRepositoryImpl
 
   @override
   Future<bool> signIn(SignInCredentials credential) async {
-    var response = await client.post("/auth/signin", credential.toJson());
-    var islogedIn = response["status"] == "success";
-    if (islogedIn) writeAuthToken(response["token"]);
-    return islogedIn;
+    // var response = await client.post("/auth/signin", credential.toJson());
+    // var islogedIn = response["status"] == "success";
+    // if (islogedIn) writeAuthToken(response["token"]);
+    await Future.delayed(Duration(seconds: 1));
+    return (credential.email == "zouhirmoh@gmail.com" &&
+        credential.password == "1234");
   }
 
   @override

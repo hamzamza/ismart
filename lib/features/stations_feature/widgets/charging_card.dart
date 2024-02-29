@@ -33,7 +33,7 @@ class ChargingCard extends StatelessWidget {
         children: [
           const SizedBox(height: 8),
           ChargingProgressIndicator(
-            timeInSeconds: 1,
+            timeInSeconds: 300,
           ),
           const SizedBox(height: 16),
           Row(
